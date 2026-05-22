@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e24;
+  color: #ffffff;
+  padding: 20px;
+}
+
+#ui-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.pdf-btn {
+  background-color: #10b981;
+}
+.pdf-btn:hover {
+  background-color: #059669;
+}
+
+#logger {
+  color: #a7f3d0;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.canvas-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.canvas-box {
+  background: #111116;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #33333f;
+}
+
+.canvas-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+canvas {
+  background-color: #111116;
+  display: block;
+}
