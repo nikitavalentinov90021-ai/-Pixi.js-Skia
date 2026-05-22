@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интеграция Pixi.js и Skia</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://unpkg.com/canvaskit-wasm@0.39.1/bin/canvaskit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div id="ui-container">
+      <h1>Интерфейс тестирования Pixi.js ➔ Skia</h1>
+      <div class="buttons">
+        <button id="btn-random">➕ Добавить случайную фигуру</button>
+        <button id="btn-scene">🔄 Переключить цену</button>
+        <button id="btn-pdf" class="pdf-btn">📄 Экспорт в векторный PDF</button>
+      </div>
+      <p id="logger">Лог событий: Ожидание клика по фигурам...</p>
+    </div>
+
+    <div class="canvas-wrapper">
+      <div class="canvas-box">
+        <h3>Холст 1: PIXI.JS</h3>
+        <div id="pixi-app"></div>
+      </div>
+      <div class="canvas-box">
+        <h3>Холст 2: SKIA</h3>
+        <canvas id="skia-canvas" width="800" height="600"></canvas>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
